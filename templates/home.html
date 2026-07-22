@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Home — Your Site{% endblock %}
+
+{% block content %}
+{# EDIT: your one-line intro. #}
+<section class="lead"><p>one or two sentences about who you are and what you build.</p></section>
+
+{# EDIT: your featured list. Each row links to a page under /projects/.
+   To add a real one: copy templates/projects/example.html, then register a
+   route for it in src/main.rs (see the PROJECT PAGES section there). #}
+<nav class="idx" aria-label="Featured projects">
+  <a class="row" href="/projects/example"><span class="num">01</span><span class="name">example</span><span class="desc">short description</span></a>
+  <a class="row" href="/projects/example"><span class="num">02</span><span class="name">another</span><span class="desc">short description</span></a>
+  <a class="row" href="/projects/example"><span class="num">03</span><span class="name">third</span><span class="desc">short description</span></a>
+</nav>
+{% endblock %}

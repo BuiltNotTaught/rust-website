@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}Work — Your Site{% endblock %}
+{% block tagline %}projects, code, and experiments{% endblock %}
+{% block content %}
+<h1>work</h1>
+<p>a short intro to your projects.</p>
+
+{# EDIT: one .proj block per project. `.stack` is the small grey line for
+   tech used and links. Remove the <a> if a project has no page yet. #}
+<div class="proj">
+  <h3><a href="/projects/example">project name</a> — one-line summary</h3>
+  <p>two or three sentences: what it is, why you built it, what is interesting about it.</p>
+  <p class="stack">tech · tech · tech · <a href="https://example.com" target="_blank" rel="noopener">source ↗</a></p>
+</div>
+
+<div class="proj">
+  <h3>project without a page</h3>
+  <p>not every project needs its own page — this one is just described here.</p>
+  <p class="stack">tech · tech</p>
+</div>
+
+<h2>archive</h2>
+<p>older work, experiments, and things that did not pan out.</p>
+<ul>
+  <li><strong>thing</strong> — one line about it</li>
+  <li><strong>thing</strong> — one line about it</li>
+</ul>
+{% endblock %}

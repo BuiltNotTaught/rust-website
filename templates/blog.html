@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Blog — Your Site{% endblock %}
+{% block tagline %}notes and build logs{% endblock %}
+{% block content %}
+<h1>blog</h1>
+{# Posts come from the SQLite database, newest first. See seed.sh to add some. #}
+{% if posts %}
+<div class="posts">
+{% for post in posts %}
+<article class="entry">
+  <a class="etitle" href="/blog/{{ post.slug }}">{{ post.title }}</a>
+  <span class="emeta">{{ post.created_at }}</span>
+  <p>{{ post.content | truncate(length=160) }}</p>
+</article>
+{% endfor %}
+</div>
+{% else %}
+<p class="muted">no posts yet — check back soon.</p>
+{% endif %}
+{% endblock %}
