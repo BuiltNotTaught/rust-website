@@ -113,10 +113,6 @@ Two things worth knowing:
 then handlers grouped by area. `src/db.rs` creates the schema, `src/models.rs` has the two row
 types.
 
-## Licence
-
-CC BY-NC-ND 4.0. Do whatever you like with it.
-
 ## License
 
 Copyright (c) 2026 BuiltNotTaught
